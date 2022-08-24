@@ -1,0 +1,164 @@
+[
+    {
+    "name": "javascript",
+    "body": [
+        "function ${1:functionName}(${2:parameter}){",
+        "  ${0:functionBody}",
+        "}"
+    ]
+},
+    {
+        "name": "javascript",
+        "body": [
+            " static class FastReader  {",
+        " BufferedReader br;",
+        " StringTokenizer st;",
+        " public FastReader()",
+        "{",
+        " br = new BufferedReader(new InputStreamReader(System.in));",
+        "}",
+        "String next(){",
+        "while (st == null || !st.hasMoreElements()) {",
+        "try {",
+        " st = new StringTokenizer(br.readLine());",
+        "}",
+        " catch (IOException e) {",
+        " e.printStackTrace();",
+        "}",
+        "}",
+        "return st.nextToken();",
+        "}",
+        "int nextInt() { return Integer.parseInt(next()); }",
+        "long nextLong() { return Long.parseLong(next()); }",
+        "double nextDouble() {",
+        "return Double.parseDouble(next())",
+        " }",
+        "String nextLine(){",
+        "String str = \"\";",
+        "try {",
+        "str = br.readLine();",
+        "}",
+        "catch (IOException e) {",
+        "e.printStackTrace();",
+        "}",
+        "return str;",
+        "}",
+        "}",
+        "",
+        " "
+        ]
+    },
+    {
+    "name": "javascript",
+    "body": [
+        "${1:functionName}",
+        "  ${0:functionBody}",
+        "}"
+    ]
+    },
+    {
+    "name": "react",
+    "body": 
+        [
+        "import React from \"react\"",
+        "",
+        "const ${1:name} = (props) => {",
+        "  return (",
+        "    <div>",
+        "      $2",
+        "    </div>",
+        "  )",
+        "};",
+        "",
+        "export default ${1:name};",
+        ""
+        ]
+    },
+    {
+    "name": "react",
+    "body": [
+        "import React, { Component } from \"react\";",
+        "",
+        "class ${1:name} extends Component {",
+        "  render(){",
+        "    return(",
+        "      <div>",
+        "        $2",
+        "      </div>",
+        "    )",
+        "  }",
+        "}",
+        "",
+        "export default ${1:name};"
+        ]
+    },
+    {
+    "name": "vue",
+    "body": [
+            "<template>",
+                "\t<div class='${name}'></div>",
+            "</template>",
+            "",
+            "<script>",
+                "\texport default {",
+                    "\t\tname: '${name}'",
+                "\t}",
+            "</script>",
+            "",
+            "<style lang='sass'>",
+                "\t.${name} {",
+                "",  
+                "\t}",
+            "</style>"
+        ]
+    },
+    {
+    "name": "c++",
+    "body": ["#include <bits/stdc++.h>",
+            "using namespace std;",
+            "#define ll long long",
+            "#define mod 1000000007\nvoid solve()",
+            "{",
+                "\t$2",
+            "}",
+            "int main() {\n\tios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);\n#ifndef ONLINE_JUDGE",
+            "\tfreopen(\"input.txt\", \"r\", stdin);",
+            "\tfreopen(\"output.txt\", \"w\", stdout);",
+            "#endif\n\n\tll test=1;\n//$1cin>>test;\n\twhile(test--)\n\t{\n\t\tsolve();\n\t}\n\treturn 0;\n}\n"     
+	  ]
+    },
+    {
+    "name": "c++",
+    "body": ["#include <bits/stdc++.h>",
+            "int main() {\n\tios_base::sync_with_stdio(false);cin.tie(NULL);cout.tie(NULL);\n#ifndef ONLINE_JUDGE",
+            "\tfreopen(\"input.txt\", \"r\", stdin);",
+            "\tfreopen(\"output.txt\", \"w\", stdout);",
+            "#endif\n\n\tll test=1;\n//$1cin>>test;\n\twhile(test--)\n\t{\n\t\tsolve();\n\t}\n\treturn 0;\n}\n"     
+	  ]
+    },
+    {
+        "name": "express",
+        "body": [
+            "app.get('/',function(req,res)",
+            " { res.sendFile('index.html')",
+            "})"
+        ]
+    },
+    {
+        "name": "express",
+        "body": [
+            "router.use((req, res, next)",
+            "=> {",
+             
+            "if (!req.user || !req.user.isAdmin)",
+            "{",
+
+            "res.status(401).json({ error: 'Unauthorized' })",
+  
+            "return;",
+            "}",
+            "next()",
+            "});"
+        ]
+    }
+]
